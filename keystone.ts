@@ -25,8 +25,8 @@ export default withAuth(
       },
     },
     db: {
-      provider: 'mongoose',
-      url: 'mongodb+srv://admin:Salsa123@salsafreedom.eahrum8.mongodb.net/?retryWrites=true&w=majority',
+      provider: 'sqlite',
+      url: 'file:./keystone.db',
     },
     // This config allows us to set up features of the Admin UI https://keystonejs.com/docs/apis/config#ui
     ui: {
