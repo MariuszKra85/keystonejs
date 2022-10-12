@@ -18,9 +18,15 @@ export default withAuth(
   // Using the config function helps typescript guide you to the available options.
   config({
     // the db sets the database provider - we're using sqlite for the fastest startup experience
+    server: {
+      cors: {
+        origin: ['http://localhost:7777'],
+        credentials: true,
+      },
+    },
     db: {
-      provider: 'sqlite',
-      url: 'file:./keystone.db',
+      provider: 'mongoose',
+      url: 'mongodb+srv://admin:Salsa123@salsafreedom.eahrum8.mongodb.net/?retryWrites=true&w=majority',
     },
     // This config allows us to set up features of the Admin UI https://keystonejs.com/docs/apis/config#ui
     ui: {
