@@ -3,9 +3,9 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
-    "dev": "keystone dev localhost -p 8000",
-    "start": "next start",
-    "build": "next build",
+    "dev": "keystone dev",
+    "start": "keystone start",
+    "build": "keystone build",
     "postinstall": "keystone postinstall"
   },
   "dependencies": {
